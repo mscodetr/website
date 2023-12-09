@@ -1,0 +1,109 @@
+@import url('https://fonts.cdnfonts.com/css/cakerolli-trial');
+
+.menu-container {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    margin-top: 20px;
+
+    width: 447px;
+    height: 22px;
+    margin-left: 500px;
+    color: #6036B4;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 10 10px;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 20px 10px 60px #c2a4ff;
+    border-radius: 100px;
+    font-family: 'Cakerolli Trial', sans-serif;
+    font-size: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #6036B4;
+}
+
+.resim {
+    text-align: center;
+    margin-top: 50px;
+    height: 454px;
+    width: 1280px;
+    margin-left: 120px;
+    float: center;
+    box-shadow: 0px 0px 60px rgb(255 222, 222);
+    border-radius: 200px;
+}
+
+.resimdir {
+    border-radius: 150px;
+}
+
+.body {
+    background-color: #d8fcff;
+}
+
+.logo {
+    text-align: left;
+    width: 15px;
+    height: 15px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+
+}
+
+.icon {
+    margin-left: -10px;
+    margin-bottom: 55px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    position: relative;
+}
+
+button#searchButton {
+    border-radius: 4px;
+    border: 1px solid #c2a4ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50px;
+    height: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: relative;
+}
+button#searchButton:hover {
+    background-color: #644f8f;
+}
+
+.search-container {
+    margin-top: 12px;
+    margin-bottom: auto;
+    text-align: right;
+    margin-right: 25px;
+    position: relative;
+
+}
+
+#searchInput {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#searchButton {
+    padding: 8px 16px;
+    border-radius:  4px;
+    border: 1px solid #c2a4ff;
+    font-size:20px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
