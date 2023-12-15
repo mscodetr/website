@@ -1,46 +1,147 @@
 <!DOCTYPE html>
 <html>
     <head>
+       
+        <meta charset="UTF-8">
+        <meta name="description" content="Bebek Ürünleri Müslin">
+        <meta name="author" content="marka adı">
+        <meta name="keywords" content="giyim, bebek, müslin">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="description" content="bebek ürünleri">
-    <meta name="author" content="marka adi">
-    <meta name="keywords" content="giyim, bebek, müslin">
-    
-    <title>Bebek Home</title>
+         <title>Müslin Bebek</title>
 
-    <link rel="stylesheet" type="text/css" href="main.css">
-
-    </head>
-
-    <body bgcolor="#d7e7fe">
-
+         <link rel="stylesheet" type="text/css" href="reset.css">
+         <link rel="stylesheet" type="text/css" href="main.css">
+         <link rel="stylesheet" href="https://fontawesome.com/icons/thumbtack?f=classic&s=solid">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">-->
+        </head>
+    <body>
+        
         <header>
+         
+           
             <div class="menu-container">
-                <div class="logo">
-                    <img src="img/Bebebk Home (2).png">
-                    <a href="index.html"></a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html" class="menu-item"></a>home</li>
-                        <li><a href="bebek.html" class="menu-item"></a>baby</li>
-                        <li><a href="cocuk.html" class="menu-item"></a>kids</li>
-                    </ul>
-                </div>
+              <div class="logo">
+                <img src="img/Bebebk Home (2).png">
+                <a href="index.html"></a>
+              </div>
+            <div class="menu">
+                <ul class="menu1">
+                    <li><a href="index.html" class="menu-item">home</a></li>
+                    <li><a href="bebek.html" class="menu-item">baby</a></li>
+                    <li><a href="cocuk.html" class="menu-item">kids</a></li>
+
+                </ul>
+
+            </div>
             </div>
 
             <div class="search-container">
                 <div class="search-box">
-                    <input type="text" placeholder="Ara..." id="searchInput">
-                    <button id="searchButton"><i class="fa fa-search"><img class="icon" src="img/icons8-search-.png"></i></button>
+                  <input type="text" placeholder="Ara..." id="searchInput">
+                  <button id="searchButton"><i class="fas fa-search"><img class="icon" src="img/icons8-search-.png"></i></button> <!-- FontAwesome ikonu buton içinde -->
                 </div>
-            </div>
+            
+              </div>
 
+
+            <div class="icon">
+                <!--<img src="img/icons8-search-.png">-->
+                <!--<img src="img/icons8-basket-.png">-->
+
+            </div>
             <div class="resim">
                 <img class="resimdir" src="img/header.jpg">
             </div>
+         
         </header>
 
+        <!--ADIM ADIM 2 -->
+
+        <div class="head">
+        <h1 class="animated">Müslinler</h1>
+
+        </div>
+
+        <div class="kartlar-container">
+          <div class="w3-card-12">
+            <img src="img/msülin3_3.png">
+            <!-- Kart 1 içeriği -->
+            <div class="kart-bilgi">
+              <h3>Uzay Müslin</h3>
+              <p>%100 saf ve yumuşak</p>
+          </div>
+          </div>
+          <div class="w4-card-12">
+            <img src="img/müslin1.png">
+            <!-- Kart 2 içeriği -->
+            <div class="kart-bilgi">
+              <h3>Zebra Müslin</h3>
+              <p>%100 saf ve yumuşak</p>
+              
+            </div>
+          </div>
+
+          <div class="w5-card-12">
+            <img src="img/müslin4.png">
+            <!-- Kart 2 içeriği -->
+            <div class="kart-bilgi">
+              <h3>Harf Müslin</h3>
+              <p>%100 saf ve yumuşak</p>
+            </div>
+          </div>
+
+          <div class="w6-card-12">
+            <img src="img/müslin6.png">
+            <!-- Kart 2 içeriği -->
+            <div class="kart-bilgi">
+              <h3>Uçan Balon Müslin</h3>
+              <p>%100 saf ve yumuşak</p>
+            </div>
+          </div>
+      </div>
+
+
+
+      <form action="/siparis_al" method="post">
+        <label for="ad">Adınız:</label>
+        <input type="text" id="ad" name="ad" required><br><br>
+      
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" id="soyad" name="soyad" required><br><br>
+      
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required><br><br>
+      
+        <label for="urun">Sipariş Edilen Ürün:</label>
+        <input type="text" id="urun" name="urun" required><br><br>
+      
+        <label for="adet">Adet:</label>
+        <input type="number" id="adet" name="adet" min="1" required><br><br>
+      
+        <label for="adres">Adres:</label>
+        <textarea id="adres" name="adres" required></textarea><br><br>
+      
+        <input type="submit" value="Siparişi Tamamla">
+      </form>
+
+
+      <script>
+        // Tüm kartları alalım
+        const cards = document.querySelectorAll('.w3-card-12, .w4-card-12, .w5-card-12, .w6-card-12');
+
+        // Her kartı belirli bir süre aralığıyla gösterelim
+        let delay = 0;
+        cards.forEach(card => {
+            setTimeout(() => {
+                card.style.display = 'block';
+            }, delay);
+            delay += 500; // Her kartın gösterilme aralığı (milisaniye cinsinden)
+        });
+    </script>
+    
     </body>
 </html>
